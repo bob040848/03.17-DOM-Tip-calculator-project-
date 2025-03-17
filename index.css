@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+.title {
+  font-size: 80px;
+  color: white;
+}
+.tip-calculator {
+  background-color: white;
+  padding: 16px;
+  width: 400px;
+  column-gap: 12px;
+  border-radius: 20px;
+}
+.section {
+  background-color: #03958a;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 26px, 16px;
+  border-radius: 10px;
+  row-gap: 10px;
+}
+p {
+  font-size: 18px;
+  color: #01464b;
+  margin-bottom: 4px;
+}
+.bill-input {
+  padding: 8px;
+  column-gap: 10px;
+  border-radius: 5px;
+  display: flex;
+  background-color: #f3f8fa;
+}
+.bill-input input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+.tips {
+  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tips button {
+  width: 70px;
+  height: 35px;
+  border: none;
+  font-size: 16px;
+  background-color: #efefef;
+  color: #01464b;
+  border-radius: 5px;
+}
+#reset-button {
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
