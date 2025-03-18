@@ -1,5 +1,4 @@
 const billInput = document.getElementById("bill-input");
-// const reset = document.getElementById("reset-button");
 
 const sanitizeBillInput = (input) => {
   input = input.replace(/[^\d.]/g, "");
@@ -27,5 +26,18 @@ tips.addEventListener("click", (event) => {
   if (event.target.tagName !== "BUTTON") return;
 
   if (!billInput.value) {
+    alert("Please enter a bill amount.");
+    return;
   }
+  const tipPer = parseFloat(event.target.textContent.replace("%", ""));
+
+  const totalAmount = calTotal(billInput.value, tipPer);
+
+  total.innerText = `Total ${totalAmount}`;
+});
+
+const resButton = document.getElementById("reset-button");
+resButton.addEventListener("click", () => {
+  billInput.value = "";
+  total.innerText = "0.00";
 });
